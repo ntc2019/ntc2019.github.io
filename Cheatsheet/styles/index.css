@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/ubuntu/v20/4iCs6KVjbNBYlgoKfw72.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/merriweather/v30/u-4n0qyriQwlOrhSvowK_l521wRZWMf6.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    background-color: #1D1E20;
+    color: lightgray;
+}
+
+a {
+    color: cornflowerblue;
+}
+
+h1,
+h2 {
+    font-size: 18px;
+}
+
+.tableName {
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    color: #407ee6;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+table {
+    margin: auto;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 2px solid gray;
+    border-collapse: collapse;
+    padding-left: 5px;
+}
+
+th {
+    font-size: 25px;
+}
+
+pre code {
+    display: block;
+}
+
+.token_tag {
+    color: aquamarine;
+}
+
+.token_attribute {
+    color: darksalmon;
+}
+
+.token_punctuation {
+    color: lightgray;
+}
+
+.banner h1 {
+    font-size: 50px;
+    font-family: Ubuntu, sans-serif;
+}
+
+.banner h2 {
+    font-family: Merriweather, serif;
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>WebDev Cheatsheet</title>
+</head>
+
+<body>
+    <header>
+        <section class="banner">
+            <h1>Welcome to my WebDev Cheatsheet</h1>
+            <h2>This is where I upload all the crumbs I get when studying Web Development.</h2>
+        </section>
+    </header>
+    <main>
+        <nav>
+            <a href="#HTML_Cheatsheet">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">Boiler Plate</a>
+        </nav>
+        <table id="HTML_Cheatsheet">
+            <thead>
+                <tr>
+                    <th colspan="2" class="tableName">HTML Cheatsheet</th>
+                </tr>
+                <tr>
+                    <th span="col">HTML Element</th>
+                    <th span="col">Example code</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>&lt;<span class="token_tag">table</span>&gt; <strong>Table Element</strong><br>
+                            The table element is used to organize data into rows and columns.
+                        </p>
+                    </td>
+
+                    <td>
+                        <p>
+                        <pre><code>&lt;<span class="token_tag">table</span>&gt;
+    .....
+    &lt;!--table data goes here--&gt;
+&lt;<span class="token_tag">/table</span>&gt;</code></pre>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&lt;<span class="token_tag">thead</span>&gt; <strong>Table head element</strong><br>
+                            The table head element <code>&lt;thead&gt;</code> define the header of a table.</p>
+                    </td>
+
+                    <td>
+                        <pre><code>&lt;<span class="token_tag">table</span>&gt;
+    &lt;<span class="token_tag">thead</span>&gt;
+    &lt;!--header content--&gt;
+        &lt;<span class="token_tag">tr</span>&gt;
+            &lt;<span class="token_tag">th</span>&gt;
+                Name
+            &lt;<span class="token_tag">/th</span>&gt;
+            &lt;<span class="token_tag">th</span>&gt;
+                Adress
+            &lt;<span class="token_tag">/th</span>&gt;
+        &lt;<span class="token_tag">/tr</span>&gt;
+    &lt;<span class="token_tag">/thead</span>&gt;
+&lt;<span class="token_tag">/table</span>&gt;</code></pre>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &lt;<span class="token_tag">tbody</span>&gt; <strong>Table body element</strong><br>
+                        The table <code>&lt;tbody&gt;</code> body element indicate the data content of a table.
+                    </td>
+                    <td>
+                        <pre><code>&lt;<span class="token_tag">table</span>&gt;
+    &lt;<span class="token_tag">thead</span>&gt;
+    &lt;<span class="token_tag">/thead</span>&gt;
+    &lt;<span class="token_tag">tbody</span>&gt;
+        &lt;<span class="token_tag">tr</span>&gt;
+            &lt;<span class="token_tag">td</span>&gt;
+                Richard
+            &lt;<span class="token_tag">/td</span>&gt;
+            &lt;<span class="token_tag">td</span>&gt;
+                07,Beverly Hill
+            &lt;<span class="token_tag">/td</span>&gt;                                                                      
+            &lt;<span class="token_tag">td</span>&gt;
+                Johnson
+            &lt;<span class="token_tag">/td</span>&gt;
+            &lt;<span class="token_tag">td</span>&gt;
+                105, Hampton Ville
+            &lt;<span class="token_tag">/td</span>&gt;                                                                      
+        &lt;<span class="token_tag">/tr</span>&gt;
+    &lt;<span class="token_tag">/tbod</span>y&gt;
+&lt;<span class="token_tag">/table</span>&gt;</code></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &lt;<span class="token_tag">tr</span>&gt; <strong>Table row element</strong><br>
+                        The table row, <code>&lt;tr&gt;</code>, is used to add rows to table before adding table data
+                        and table headings.
+                    </td>
+                    <td>
+                        <pre><code>&lt;<span class="token_tag">table</span>&gt;
+    &lt;<span class="token_tag">tr</span>&gt;
+        ....
+    &lt;<span class="token_tag">/tr</span>&gt;
+&lt;<span class="token_tag">table</span>/&gt;</code></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &lt;<span class="token_tag">td</span>&gt; <strong>Table Data Element</strong><br>
+                        The table data element, <code>&lt;td&gt;</code>, can be nested inside a table row element,
+                        <code>&lt;tr&gt;</code>, to add a cell of table data to a table.
+                    </td>
+                    <td>
+                        <pre><code>&lt;<span class="token_tag">table</span>&gt;
+    &lt;<span class="token_tag">tr</span>&gt;
+        &lt;<span class="token_tag">td</span>&gt;cell one data&lt;<span class="token_tag">/td</span>&gt;
+        &lt;<span class="token_tag">td</span>&gt;cell two data&lt;<span class="token_tag">/td</span>&gt;
+    &lt;<span class="token_tag">/tr</span>&gt;
+&lt;<span class="token_tag">/table</span>&gt;</code></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&lt;<span class="token_tag">tfoot</span>&gt;<strong> Table Footer Element</strong><br>
+                            The table footer element, <code>&lt;tfoot&gt;</code>, uses table rows to give footer content
+                            or to summarize content at the end of the table.</p>
+                    </td>
+                    <td>
+                        <pre><code>&lt;<span class="token_tag">table</span>&gt;
+    &lt;<span class="token_tag">thead</span>&gt;
+        &lt<span class="token_tag">tr</span>&gt;
+            &lt;<span class="token_tag">th</span>&gt;Headings one&lt;<span class="token_tag">/th</span>&gt;
+            &lt;<span class="token_tag">th</span>&gt;Headings two&lt;<span class="token_tag">/th</span>&gt;
+        &lt;<span class="token_tag">/tr</span>&gt;
+    &lt;<span class="token_tag">/thead</span>&gt;
+    &lt;<span class="token_tag">tbody</span>&gt;
+        &lt;<span class="token_tag">tr</span>&gt;
+            &lt;<span class="token_tag">td</span>&gt;Data Column one&lt;<span class="token_tag">/td</span>&gt;
+            &lt;<span class="token_tag">td</span>&gt;Data Column two&lt;<span class="token_tag">/td</span>&gt;
+        &lt;<span class="token_tag">/tr</span>&gt;
+    &lt;<span class="token_tag">/tbody</span>&gt;
+    &lt;<span class="token_tag">tfoot</span>&gt;
+        &lt;<span class="token_tag">tr</span>&gt;
+            &lt;<span class="token_tag">td</span>&gt;Summary of column one&lt;<span class="token_tag">/td</span>&gt;
+            &lt;<span class="token_tag">td</span>&gt;Summary of column two&lt;<span class="token_tag">/td</span>&gt;
+        &lt;<span class="token_tag">/tr</span>&gt;
+    &lt;<span class="token_tag">/tfoot</span>&gt;
+&lt;<span class="token_tag">/table</span>&gt;</code></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><code><span class="token_attribute">colspan</span></code> <strong>Attribute</strong><br>
+                            The <code><span class="token_attribute">colspan</span></code> attribute on a table header
+                            <code>&lt;th&gt;</code> or table data
+                            <code>&lt;td&gt;</code>
+                            element indicates how many columns that particular cell should span within the table. The
+                            <code><span class="token_attribute">colspan</span></code> value is set to 1 by default and
+                            will take any positive integer between
+                            1 and 1000.
+                        </p>
+                    </td>
+                    <td>
+                        <pre><code>&lt;<span class="token_tag">table</span>&gt;
+    &lt;<span class="token_tag">tr</span>&gt;
+        &lt;<span class="token_tag">th</span>&gt;Row 1:&lt;<span class="token_tag">/th</span>&gt;
+        &lt;<span class="token_tag">td</span>&gt;col 1&lt;<span class="token_tag">/td</span>&gt;
+        &lt;<span class="token_tag">td</span>&gt;col 2&lt;<span class="token_tag">/td</span>&gt;
+        &lt;<span class="token_tag">td</span>&gt;col 3&lt;<span class="token_tag">/td</span>&gt;
+    &lt;<span class="token_tag">/tr</span>&gt;
+    &lt;<span class="token_tag">tr</span>&gt;
+        &lt;<span class="token_tag">th</span>&gt;Row 2:&lt;<span class="token_tag">/th</span>&gt;
+        &lt;<span class="token_tag">td <span class="token_attribute">colspan</span><span class="token_punctuation">="</span>2<span class="token_punctuation">"</span></span>&gt;col 1 + 2 (will span 2 columns)&lt;<span class="token_tag">/td</span>&gt;
+        &lt;<span class="token_tag">td</span>&lt;col 3&lt;<span class="token_tag">/td</span>&gt;
+    &lt;<span class="token_tag">/tr</span>&gt;
+&lt;<span class="token_tag">/table</span>&gt;</code></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><code><span class="token_attribute">rowspan</span></code> <strong>Attribute</strong><br>
+                            Similar to <code><span class="token_attribute">colspan</span></code>, the
+                            <code><span class="token_attribute">rowspan</span></code> attribute on a table header or
+                            table data element indicates how many rows that particular cell should span within the
+                            table. The <code>rowspan</code> value is set to 1 by default and will
+                            take any positive integer up to 65534.
+                        </p>
+                    </td>
+                    <td>
+                        <pre><code>&lt;<span class="token_tag">table</span>&gt;
+    &lt;<span class="token_tag">tr</span>&gt;
+        &lt;<span class="token_tag">th</span>&gt;Row 1:&lt;<span class="token_tag">/th</span>&gt;
+        &lt;<span class="token_tag">td</span>&gt;col 1&lt;<span class="token_tag">/td</span>&gt;
+        &lt;<span class="token_tag">td</span>&gt;col 2&lt;<span class="token_tag">/td</span>&gt;
+    &lt;<span class="token_tag">/tr</span>&gt;
+    &lt;<span class="token_tag">tr</span>&gt;
+        &lt;<span class="token_tag">th <span class="token_attribute">rowspan</span><span class="token_punctuation">="</span>2<span class="token_punctuation">"</span></span>&gt;Row 2 + 3:&lt;<span class="token_tag">/th</span>&gt;
+        &lt;<span class="token_tag">td</span>&gt;col 1&lt;<span class="token_tag">/td</span>&gt;
+        &lt;<span class="token_tag">td</span>&gt;col 2&lt;<span class="token_tag">/td</span>&gt;
+    &lt;<span class="token_tag">/tr</span>&gt;
+    &lt;<span class="token_tag">tr</span>&gt;
+        &lt;<span class="token_tag">td</span>&gt;col 1&lt;<span class="token_tag">/td</span>&gt;
+        &lt;<span class="token_tag">td</span>&gt;col 2&lt;<span class="token_tag">/td</span>&gt;
+    &lt;<span class="token_tag">/tr</span>&gt;
+&lt;<span class="token_tag">/table</span>&gt;
+                    </code></pre>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+</body>
+
+</html>

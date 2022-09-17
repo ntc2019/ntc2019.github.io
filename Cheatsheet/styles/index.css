@@ -71,6 +71,11 @@ pre code {
     color: lightgray;
 }
 
+.banner h1,
+h2 {
+    text-align: center;
+}
+
 .banner h1 {
     font-size: 50px;
     font-family: Ubuntu, sans-serif;
